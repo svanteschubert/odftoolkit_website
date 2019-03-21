@@ -1,0 +1,65 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+ODF Validator
+
+
+From: 'an unknown organization'
+  - JAXB isorelax library (http://java.net/isorelax/) com.sun.xml.bind.jaxb:isorelax:jar:20090621
+
+  - java-rdfa (http://rootdev.net/maven/projects/java-rdfa/) net.rootdev:java-rdfa:jar:0.4.2
+    License: BSD  (http://wiki.github.com/shellac/java-rdfa/licence)
+  - isorelax-jaxp-bridge  org.iso_relax.verifier.jaxp.validation:isorelax-jaxp-bridge:jar:1.0
+
+  - relaxngDatatype  relaxngDatatype:relaxngDatatype:jar:20020414
+
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - Apache Log4j (http://logging.apache.org/log4j/1.2/) log4j:log4j:bundle:1.2.17
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - XML Commons External Components XML APIs (http://xml.apache.org/commons/components/external/) xml-apis:xml-apis:jar:1.3.04
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - MSV Core (http://msv.java.net/msv-core) net.java.dev.msv:msv-core:jar:2013.6.1
+    License: BSD  (http://msv.java.net/License.txt)
+  - MSV XML Schema Library (http://msv.java.net/xsdlib) net.java.dev.msv:xsdlib:jar:2013.6.1
+    License: BSD  (http://msv.java.net/License.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.6
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J LOG4J-12 Binding (http://www.slf4j.org) org.slf4j:slf4j-log4j12:jar:1.7.6
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons BeanUtils (http://commons.apache.org/proper/commons-beanutils/) commons-beanutils:commons-beanutils:jar:1.9.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Digester (http://commons.apache.org/digester/) commons-digester:commons-digester:jar:1.8.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons FileUpload (http://commons.apache.org/fileupload/) commons-fileupload:commons-fileupload:jar:1.2.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Logging (http://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Validator (http://commons.apache.org/proper/commons-validator/) commons-validator:commons-validator:jar:1.5.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Jena - Core (http://jena.apache.org/jena-core/) org.apache.jena:jena-core:jar:2.11.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Jena - IRI (http://jena.apache.org/jena-iri/) org.apache.jena:jena-iri:jar:1.0.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ODFDOM (http://incubator.apache.org/odftoolkit/odfdom/index.html) org.apache.odftoolkit:odfdom-java:jar:0.8.11-incubating
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ODF Custom Javadoc Taglets (http://incubator.apache.org/odftoolkit/odfdom/index.html) org.apache.odftoolkit:taglets:jar:0.8.11-incubating
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Xerces2 Java Parser (http://xerces.apache.org/xerces2-j) xerces:xercesImpl:jar:2.9.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

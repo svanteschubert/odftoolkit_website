@@ -1,0 +1,782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Coverage Report</title>
+<link title="Style" type="text/css" rel="stylesheet" href="css/main.css"/>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+<h5>Coverage Report - org.odftoolkit.odfdom.dom.style.props.OdfGraphicProperties</h5>
+<div class="separator">&nbsp;</div>
+<table class="report">
+<thead><tr>  <td class="heading">Classes in this File</td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Line Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Branch Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Complexity</a></td></tr></thead>
+  <tr><td><a href="org.odftoolkit.odfdom.dom.style.props.OdfGraphicProperties.html">OdfGraphicProperties</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">N/A</a></td><td class="percentgraph"><div class="percentgraph"><div class="na" style="width:100px"><span class="text"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">N/A</a></span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">N/A</a></td><td class="percentgraph"><div class="percentgraph"><div class="na" style="width:100px"><span class="text"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">N/A</a></span></div></div></td></tr></table></td><td class="value"><span class="hidden">0.0;</span>0</td></tr>
+
+</table>
+<div class="separator">&nbsp;</div>
+<table cellspacing="0" cellpadding="0" class="src">
+<tr>  <td class="numLine">&nbsp;1</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">/************************************************************************</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;2</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;3</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;4</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;5</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * Copyright 2008, 2010 Oracle and/or its affiliates. All rights reserved.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;6</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;7</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * Use is subject to license terms.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;8</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;9</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * Licensed under the Apache License, Version 2.0 (the "License"); you may not</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;10</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * use this file except in compliance with the License. You may obtain a copy</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;11</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * of the License at http://www.apache.org/licenses/LICENSE-2.0. You can also</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;12</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * obtain a copy of the License at http://odftoolkit.org/docs/license.txt</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;13</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;14</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;15</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;16</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;17</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;18</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * See the License for the specific language governing permissions and</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;19</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * limitations under the License.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;20</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;21</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> ************************************************************************/</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;22</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;23</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">// !!! GENERATED SOURCE CODE !!!</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;24</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">package</span> org.odftoolkit.odfdom.dom.style.props;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;25</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;26</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.odftoolkit.odfdom.pkg.OdfNamespace;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;27</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.odftoolkit.odfdom.pkg.OdfName;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;28</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.odftoolkit.odfdom.dom.OdfDocumentNamespace;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;29</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;30</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">interface</span> OdfGraphicProperties {</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;31</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AmbientColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;32</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"ambient-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;33</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BackScale =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;34</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"back-scale"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;35</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BackfaceCulling =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;36</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"backface-culling"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;37</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CloseBack =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;38</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"close-back"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;39</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CloseFront =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;40</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"close-front"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;41</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Depth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;42</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"depth"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;43</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty DiffuseColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;44</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"diffuse-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;45</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EdgeRounding =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;46</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"edge-rounding"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;47</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EdgeRoundingMode =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;48</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"edge-rounding-mode"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;49</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EmissiveColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;50</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"emissive-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;51</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EndAngle =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;52</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"end-angle"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;53</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty HorizontalSegments =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;54</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"horizontal-segments"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;55</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty LightingMode =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;56</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"lighting-mode"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;57</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty NormalsDirection =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;58</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"normals-direction"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;59</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty NormalsKind =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;60</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"normals-kind"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;61</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Dr3dShadow =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;62</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"shadow"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;63</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Shininess =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;64</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"shininess"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;65</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty SpecularColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;66</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"specular-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;67</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextureFilter =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;68</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"texture-filter"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;69</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextureGenerationModeX =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;70</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"texture-generation-mode-x"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextureGenerationModeY =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;72</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"texture-generation-mode-y"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;73</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextureKind =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;74</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"texture-kind"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;75</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextureMode =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;76</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"texture-mode"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VerticalSegments =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;78</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DR3D, <span class="string">"vertical-segments"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;79</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AutoGrowHeight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;80</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"auto-grow-height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;81</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AutoGrowWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;82</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"auto-grow-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;83</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Blue =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;84</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"blue"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;85</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionAngle =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;86</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-angle"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;87</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionAngleType =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;88</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-angle-type"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;89</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionEscape =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;90</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-escape"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;91</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionEscapeDirection =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;92</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-escape-direction"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;93</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionFitLineLength =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;94</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-fit-line-length"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;95</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionGap =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;96</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-gap"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;97</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionLineLength =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;98</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-line-length"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;99</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty CaptionType =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;100</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"caption-type"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;101</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ColorInversion =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;102</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"color-inversion"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;103</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ColorMode =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;104</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"color-mode"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;105</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Contrast =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;106</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"contrast"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;107</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty DecimalPlaces =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;108</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"decimal-places"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;109</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty DrawAspect =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;110</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"draw-aspect"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;111</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EndGuide =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;112</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"end-guide"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;113</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EndLineSpacingHorizontal =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;114</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"end-line-spacing-horizontal"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;115</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty EndLineSpacingVertical =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;116</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"end-line-spacing-vertical"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;117</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Fill =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;118</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;119</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;120</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;121</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillGradientName =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;122</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-gradient-name"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;123</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillHatchName =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;124</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-hatch-name"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;125</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillHatchSolid =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;126</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-hatch-solid"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;127</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillImageHeight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;128</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-image-height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;129</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillImageName =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;130</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-image-name"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;131</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillImageRefPoint =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;132</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-image-ref-point"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;133</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillImageRefPointX =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;134</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-image-ref-point-x"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;135</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillImageRefPointY =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;136</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-image-ref-point-y"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;137</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillImageWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;138</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fill-image-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;139</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FitToContour =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;140</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fit-to-contour"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;141</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FitToSize =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;142</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"fit-to-size"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;143</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FrameDisplayBorder =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;144</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"frame-display-border"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;145</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FrameDisplayScrollbar =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;146</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"frame-display-scrollbar"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;147</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FrameMarginHorizontal =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;148</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"frame-margin-horizontal"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;149</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FrameMarginVertical =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;150</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"frame-margin-vertical"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;151</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Gamma =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;152</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"gamma"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;153</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty GradientStepCount =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;154</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"gradient-step-count"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;155</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Green =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;156</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"green"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;157</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty GuideDistance =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;158</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"guide-distance"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;159</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty GuideOverhang =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;160</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"guide-overhang"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;161</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ImageOpacity =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;162</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"image-opacity"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;163</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty LineDistance =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;164</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"line-distance"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;165</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Luminance =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;166</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"luminance"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;167</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarkerEnd =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;168</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"marker-end"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;169</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarkerEndCenter =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;170</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"marker-end-center"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;171</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarkerEndWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;172</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"marker-end-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;173</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarkerStart =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;174</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"marker-start"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;175</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarkerStartCenter =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;176</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"marker-start-center"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;177</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarkerStartWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;178</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"marker-start-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;179</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MeasureAlign =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;180</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"measure-align"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;181</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MeasureVerticalAlign =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;182</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"measure-vertical-align"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;183</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty OleDrawAspect =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;184</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"ole-draw-aspect"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;185</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Opacity =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;186</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"opacity"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;187</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty OpacityName =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;188</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"opacity-name"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;189</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Parallel =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;190</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"parallel"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;191</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Placing =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;192</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"placing"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;193</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Red =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;194</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"red"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;195</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty SecondaryFillColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;196</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"secondary-fill-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;197</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty DrawShadow =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;198</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"shadow"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;199</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ShadowColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;200</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"shadow-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;201</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ShadowOffsetX =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;202</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"shadow-offset-x"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;203</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ShadowOffsetY =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;204</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"shadow-offset-y"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;205</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ShadowOpacity =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;206</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"shadow-opacity"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;207</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ShowUnit =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;208</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"show-unit"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;209</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StartGuide =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;210</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"start-guide"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;211</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StartLineSpacingHorizontal =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;212</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"start-line-spacing-horizontal"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;213</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StartLineSpacingVertical =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;214</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"start-line-spacing-vertical"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;215</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Stroke =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;216</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"stroke"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;217</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeDash =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;218</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"stroke-dash"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;219</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeDashNames =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;220</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"stroke-dash-names"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;221</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeLinejoin =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;222</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"stroke-linejoin"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;223</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty SymbolColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;224</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"symbol-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;225</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextareaHorizontalAlign =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;226</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"textarea-horizontal-align"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;227</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TextareaVerticalAlign =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;228</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"textarea-vertical-align"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty TileRepeatOffset =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;230</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"tile-repeat-offset"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;231</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Unit =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;232</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"unit"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;233</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VisibleAreaHeight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;234</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"visible-area-height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;235</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VisibleAreaLeft =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;236</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"visible-area-left"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;237</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VisibleAreaTop =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;238</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"visible-area-top"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;239</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VisibleAreaWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;240</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"visible-area-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;241</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty WrapInfluenceOnPosition =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;242</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.DRAW, <span class="string">"wrap-influence-on-position"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;243</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BackgroundColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;244</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"background-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;245</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Border =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;246</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"border"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;247</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderBottom =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;248</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"border-bottom"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;249</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderLeft =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;250</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"border-left"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;251</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderRight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;252</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"border-right"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;253</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderTop =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;254</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"border-top"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;255</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Clip =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;256</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"clip"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;257</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Margin =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;258</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"margin"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;259</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarginBottom =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;260</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"margin-bottom"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;261</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarginLeft =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;262</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"margin-left"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;263</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarginRight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;264</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"margin-right"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;265</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MarginTop =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;266</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"margin-top"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;267</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MaxHeight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;268</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"max-height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;269</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MaxWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;270</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"max-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;271</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MinHeight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;272</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"min-height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;273</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty MinWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;274</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"min-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;275</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Padding =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;276</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"padding"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;277</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty PaddingBottom =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;278</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"padding-bottom"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;279</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty PaddingLeft =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;280</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"padding-left"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;281</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty PaddingRight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;282</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"padding-right"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;283</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty PaddingTop =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;284</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"padding-top"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;285</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty WrapOption =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;286</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.FO, <span class="string">"wrap-option"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;287</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BackgroundTransparency =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;288</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"background-transparency"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;289</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderLineWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;290</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"border-line-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;291</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderLineWidthBottom =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;292</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"border-line-width-bottom"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;293</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderLineWidthLeft =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"border-line-width-left"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;295</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderLineWidthRight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;296</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"border-line-width-right"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;297</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty BorderLineWidthTop =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;298</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"border-line-width-top"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;299</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Editable =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;300</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"editable"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;301</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FlowWithText =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;302</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"flow-with-text"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;303</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty HorizontalPos =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;304</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"horizontal-pos"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;305</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty HorizontalRel =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;306</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"horizontal-rel"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;307</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Mirror =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;308</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"mirror"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;309</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty NumberWrappedParagraphs =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;310</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"number-wrapped-paragraphs"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;311</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty OverflowBehavior =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;312</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"overflow-behavior"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;313</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty PrintContent =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;314</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"print-content"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;315</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Protect =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;316</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"protect"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;317</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty RelHeight =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;318</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"rel-height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;319</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty RelWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;320</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"rel-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;321</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Repeat =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;322</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"repeat"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;323</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty RunThrough =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;324</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"run-through"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;325</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StyleShadow =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;326</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"shadow"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;327</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty ShrinkToFit =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;328</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"shrink-to-fit"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;329</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VerticalPos =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;330</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"vertical-pos"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;331</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty VerticalRel =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;332</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"vertical-rel"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;333</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Wrap =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;334</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"wrap"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;335</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty WrapContour =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;336</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"wrap-contour"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;337</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty WrapContourMode =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;338</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"wrap-contour-mode"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;339</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty WrapDynamicThreshold =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;340</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"wrap-dynamic-threshold"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;341</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty WritingMode =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;342</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.STYLE, <span class="string">"writing-mode"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;343</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty FillRule =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;344</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"fill-rule"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;345</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Height =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;346</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"height"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;347</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeColor =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;348</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"stroke-color"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;349</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeLinecap =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;350</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"stroke-linecap"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;351</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeOpacity =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;352</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"stroke-opacity"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;353</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty StrokeWidth =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;354</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"stroke-width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;355</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Width =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;356</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"width"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;357</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty X =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;358</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"x"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;359</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Y =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;360</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.SVG, <span class="string">"y"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;361</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnchorPageNumber =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;362</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"anchor-page-number"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;363</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnchorType =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;364</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"anchor-type"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;365</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty Animation =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;366</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;367</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnimationDelay =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;368</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation-delay"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;369</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnimationDirection =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;370</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation-direction"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;371</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnimationRepeat =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;372</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation-repeat"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;373</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnimationStartInside =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;374</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation-start-inside"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;375</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnimationSteps =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;376</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation-steps"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;377</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> OdfStyleProperty AnimationStopInside =</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;378</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                OdfStyleProperty.get(OdfStylePropertiesSet.GraphicProperties, OdfName.newName(OdfDocumentNamespace.TEXT, <span class="string">"animation-stop-inside"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;379</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
+</table>
+
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 1.9.4.1 on 22.02.13 10:27.</div>
+</body>
+</html>
