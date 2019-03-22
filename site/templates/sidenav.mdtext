@@ -1,42 +1,40 @@
 # General
 
-  - [About](/odftoolkit/index.html)
-  - [Downloads](/odftoolkit/downloads.html)
+  - [About](/odftoolkit_website/index.html)
+  - [Downloads](/odftoolkit_website/downloads.html)
   - [Incubator page](http://incubator.apache.org/projects/odftoolkit.html)
-  - [License](/odftoolkit/license.html)
-  - [Privacy Policy](/odftoolkit/privacy.html)
+  - [License](/odftoolkit_website/license.html)
+  - [Privacy Policy](/odftoolkit_website/privacy.html)
 
 # Components
 
- - [ODFDOM](/odftoolkit/odfdom/index.html)
- - [Simple API](/odftoolkit/simple/index.html)
- - [ODF Validator](/odftoolkit/conformance/ODFValidator.html)
- - [XSLT Runner](/odftoolkit/xsltrunner/ODFXSLTRunner.html)
+ - [ODFDOM](/odftoolkit_website/odfdom/index.html)
+ - [Simple API](/odftoolkit_website/simple/index.html)
+ - [ODF Validator](/odftoolkit_website/conformance/ODFValidator.html)
+ - [XSLT Runner](/odftoolkit_website/xsltrunner/ODFXSLTRunner.html)
 
 # Community
 
-  - [Get Involved](/odftoolkit/get-involved.html)
-  - [Mailing Lists](/odftoolkit/mailing-lists.html)
-  - [People](/odftoolkit/people.html)
-  - [Community FAQs](/odftoolkit/community-faqs.html)
+  - [Get Involved](/odftoolkit_website/get-involved.html)
+  - [Mailing Lists](/odftoolkit_website/mailing-lists.html)
+  - [People](/odftoolkit_website/people.html)
+  - [Community FAQs](/odftoolkit_website/community-faqs.html)
 
 # Development
 
-  - [Source Code](/odftoolkit/source.html)
+  - [Source Code](/odftoolkit_website/source.html)
   - [Bug Tracker](https://issues.apache.org/jira/browse/ODFTOOLKIT)
-  - <a href="/odftoolkit/mvn-site/0.6-incubating/" target="_blank">Maven Reports</a>
-  - [Website](/odftoolkit/website-local.html)
-  - [Developer FAQs](/odftoolkit/developer-faqs.html)
-  
+  - <a href="/odftoolkit_website/mvn-site/0.6-incubating/" target="_blank">Maven Reports</a>
+  - [Website](/odftoolkit_website/website-local.html)
+  - [Developer FAQs](/odftoolkit_website/developer-faqs.html)
+
 # PPMC
 
-  - [PPMC FAQs](/odftoolkit/ppmc-faqs.html)
-  - [Release Guide](/odftoolkit/odftoolkit-release-guide.html)   
+  - [PPMC FAQs](/odftoolkit_website/ppmc-faqs.html)
+  - [Release Guide](/odftoolkit_website/odftoolkit-release-guide.html)
 
 # ASF
 
   - [Apache Software Foundation](http://www.apache.org)
   - [Thanks](http://www.apache.org/foundation/thanks.html)
   - [Become a Sponsor](http://www.apache.org/foundation/sponsorship.html)
-  
-
