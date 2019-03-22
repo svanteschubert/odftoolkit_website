@@ -194,6 +194,10 @@ td {
   width: 220px;
 }
 
+.w350 {
+  width: 350px;
+}
+
 .codehilite {
   background-color: #F0F000;
   padding: 0.01em 1em;
