@@ -115,13 +115,13 @@ h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover
   visibility: hidden;
 }
 h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, dt:hover > .elementid-permalink { visibility: visible }</style>
-<p>We use <a href="http://github.com/apache/odftoolkit">GitHub</a> for version control.</p>
+<p>We use <a href="http://github.com/git/odftoolkit">GitHub</a> for version control.</p>
 <h2 id="getting-the-source-code">Getting the source code<a class="headerlink" href="#getting-the-source-code" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>git clone https://github.com/apache/odftoolkit.git
+<div class="codehilite"><pre><span></span>git clone https://github.com/tdf/odftoolkit.git
 </pre></div>
 
 
-<p>For further information see the <a href="http://www.apache.org/dev/version-control.html">Apache Source Code Repository</a> page.</p>
+<p>For further information see the <a href="http://github.com/git/odftoolkit">Source Code Repository</a> page.</p>
 <h2 id="build-setup">Build setup<a class="headerlink" href="#build-setup" title="Permanent link">&para;</a></h2>
 <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>sudo apt-get install openjdk-8-jdk
@@ -137,11 +137,8 @@ modifications.</p>
 <h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h2>
 <h3 id="linux-windows">Linux / Windows<a class="headerlink" href="#linux-windows" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>cd odf-toolkit
-mvn clean install -Ppedantic
+mvn clean install
 </pre></div>
-
-
-<p>Note: The build option pedantic is triggering an Apache tool doing various checks as for unlicensed files.</p>
     </div>
     
     <div id="footera">

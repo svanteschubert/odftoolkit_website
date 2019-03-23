@@ -20,9 +20,9 @@ We use [GitHub][1] for version control.
 
 ## Getting the source code
 
-    git clone https://github.com/apache/odftoolkit.git
+    git clone https://github.com/tdf/odftoolkit.git
 
-For further information see the [Apache Source Code Repository][3] page.
+For further information see the [Source Code Repository][1] page.
 
 ## Build setup
 ###Linux
@@ -34,20 +34,14 @@ Other distros and versions should work fine, but might require some slight
 modifications.
 
 ###Windows
-For the setup of the build environment, please see [Java JDK download for Windows][4] and [Maven setup on Windows][5]
+For the setup of the build environment, please see [Java JDK download for Windows][2] and [Maven setup on Windows][3]
 
 
 ## Build
 ###Linux / Windows
     cd odf-toolkit
-    mvn clean install -Ppedantic
+    mvn clean install
 
-Note: The build option pedantic is triggering an Apache tool doing various checks as for unlicensed files.
-
-
-
-[1]: http://github.com/apache/odftoolkit
-[2]: http://svn.apache.org/viewvc/incubator/odf/trunk
-[3]: http://www.apache.org/dev/version-control.html
-[4]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-[5]: https://maven.apache.org/guides/getting-started/windows-prerequisites.html
+[1]: http://github.com/git/odftoolkit
+[2]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[3]: https://maven.apache.org/guides/getting-started/windows-prerequisites.html

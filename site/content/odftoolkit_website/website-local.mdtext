@@ -55,6 +55,8 @@ The easiest way to install the dependencies is to use Python setuptools.
 
     python --version
 
+Source code generation has been tested with XYZ
+
 #### Follow the installation instructions for [setuptools][4].
 
 #### Install dependencies
