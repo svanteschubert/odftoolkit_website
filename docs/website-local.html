@@ -151,15 +151,18 @@ cd odf-site
 </pre></div>
 
 
-<p>Source code generation has been tested with XYZ</p>
+<p>Source code generation has been tested successfully with Python 2.7.15rc1</p>
 <h4 id="follow-the-installation-instructions-for-setuptools">Follow the installation instructions for <a href="http://pypi.python.org/pypi/setuptools">setuptools</a>.<a class="headerlink" href="#follow-the-installation-instructions-for-setuptools" title="Permanent link">&para;</a></h4>
 <h4 id="install-dependencies">Install dependencies<a class="headerlink" href="#install-dependencies" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span>sudo easy_install Pygments
-sudo easy_install ElementTree
-sudo easy_install Markdown
+<div class="codehilite"><pre><span></span>sudo apt-get install -y python2.7-elementtree
+sudo apt install python-pip
+python -m pip install &quot;Markdown&lt;2.6.0&quot;
+python -m pip install &quot;Pygments==2.2.0&quot;
 </pre></div>
 
 
+<p>The Apache CMS <a href="http://www.apache.org/dev/cmsref.html#local-build">3</a> depends on old libraries.
+NOTE: The former described 'easy_install' approach is no longer working.</p>
 <h2 id="directory-layout">Directory Layout<a class="headerlink" href="#directory-layout" title="Permanent link">&para;</a></h2>
 <h4 id="content-directory">Content directory<a class="headerlink" href="#content-directory" title="Permanent link">&para;</a></h4>
 <p>The <code>site/content/odftoolkit</code> directory contains web content - markdown, html, javascript, css, images and other files. Files that do not fit recognized patterns from <code>site/lib/path.pm</code> are copied as is to the web site during the build.</p>
