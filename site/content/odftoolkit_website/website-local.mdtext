@@ -55,15 +55,19 @@ The easiest way to install the dependencies is to use Python setuptools.
 
     python --version
 
-Source code generation has been tested with XYZ
+Source code generation has been tested successfully with Python 2.7.15rc1
 
 #### Follow the installation instructions for [setuptools][4].
 
 #### Install dependencies
 
-    sudo easy_install Pygments
-    sudo easy_install ElementTree
-    sudo easy_install Markdown
+    sudo apt-get install -y python2.7-elementtree
+    sudo apt install python-pip
+    python -m pip install "Markdown<2.6.0"
+    python -m pip install "Pygments==2.2.0"
+
+The Apache CMS [3] depends on old libraries.
+NOTE: The former described 'easy_install' approach is no longer working.
 
 ## Directory Layout
 
