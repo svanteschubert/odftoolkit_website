@@ -301,4 +301,4 @@ help for instruction how to use Mercurial.
   [8]: https://msv.dev.java.net/
   [9]: https://isorelax-jaxp-bridge.dev.java.net
   [10]: http://xml.apache.org/dist/xerces-j/
-  [11]: http://svn.apache.org/viewvc/incubator/odf/trunk/validator/
+  [11]: https://github.com/tdf/odftoolkit/tree/master/validator
