@@ -16,10 +16,10 @@ Notice:    Licensed to the Apache Software Foundation (ASF) under one
            specific language governing permissions and limitations
            under the License.
 
-What is Simple API?
--------------------
+What is Simple API (deprecated)?
+--------------------------------
 
-Simple API, also called Simple Java API for ODF, is a sub-project of ODF Toolkit Union. This is an **easy-to-use**, **high-level** Java API for creating, modifying and extracting data from [Open Document Format (ODF)][3] documents. It is written in pure Java and does not require users to install any document editor on their systems. It is a high level abstraction of the lower-level [ODFDOM API][4].
+Simple API, also called Simple Java API for ODF, was a sub-project of ODF Toolkit. This is an **easy-to-use**, **high-level** Java API for creating, modifying and extracting data from [Open Document Format (ODF)][3] documents. It is written in pure Java and does not require users to install any document editor on their systems. It is a high level abstraction of the lower-level [ODFDOM API][4].
 
 What can I do with Simple API?
 ------------------------------
@@ -46,8 +46,6 @@ Need More Infomation?
 
 If you want to supply suggestion or feedback, please send [e-mail][11] to us.
 
-If you want to report a bug, please create issue on our [JIRA][12].
-
 If you want to contribute code, please read the [developer guide document][13], which introduces how to build the development environment.
 
 If you want to dive into this project, please reference the [document page][14], which lists lots of useful materials.
@@ -61,10 +59,9 @@ If you want to dive into this project, please reference the [document page][14],
   [6]: gettingstartguide.html
   [7]: document/cookbook/index.html
   [8]: demo/index.html
-  [9]: /odftoolkit/0.6.2-incubating/simple/index.html
+  [9]: odftoolkit_website/api/simple/index.html
   [10]: ../downloads.html
   [11]: mailto:odf-dev@incubator.apache.org
-  [12]: https://issues.apache.org/jira/browse/ODFTOOLKIT
-  [13]: http://incubator.apache.org/odftoolkit/simple/document/faq.html
+  [13]: odftoolkit_website/simple/document/faq.html
   [14]: document/index.html
   [15]: downloads.html

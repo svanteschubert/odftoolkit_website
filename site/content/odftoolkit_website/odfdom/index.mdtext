@@ -45,7 +45,7 @@ If you're a developer, just dive into [the development section][28]. Here you fi
   [20]: http://xml.apache.org/dist/xerces-j/
   [21]: ProjectOverview.html
   [22]: Layers.html
-  [23]: /odftoolkit/0.6.2-incubating/odfdom/
+  [23]: odftoolkit_website/api/odfdom/
   [24]: http://www.apache.org/dist/incubator/odftoolkit/docs/
   [25]: http://www.langintro.com/odfdom_tutorials/
   [26]: FrequentQuestions.html

@@ -131,20 +131,20 @@ as well as a servlet.  An instance of the servlet is <a href="http://odf-validat
 <li>Choose an arbitrary OpenDocument file &lt;odffile&gt;</li>
 <li>
 <p>OR for command line usage and help, call the '''ODF Validator''' with</p>
-<p>java -jar "./target/odfvalidator-&lt;VERSION&gt;-incubating-jar-with-dependencies.jar" &lt;odffile&gt;</p>
+<p>java -jar "./target/odfvalidator-&lt;VERSION&gt;-jar-with-dependencies.jar" &lt;odffile&gt;</p>
 </li>
 <li>
 <p>You may call the ODF Validator with</p>
 <p>java
   -Djavax.xml.validation.SchemaFactory:http://relaxng.org/ns/structure/1.0=org.iso_relax.verifier.jaxp.validation.RELAXNGSchemaFactoryImpl
   -Dorg.iso_relax.verifier.VerifierFactoryLoader=com.sun.msv.verifier.jarv.FactoryLoaderImpl
-  -jar "&lt;PATH&gt;/odfvalidator-&lt;VERSION&gt;-incubating-jar-with-dependencies.jar"  &lt;odffile&gt;</p>
+  -jar "&lt;PATH&gt;/odfvalidator-&lt;VERSION&gt;-jar-with-dependencies.jar"  &lt;odffile&gt;</p>
 </li>
 </ul>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="usage-summary">Usage Summary<a class="headerlink" href="#usage-summary" title="Permanent link">&para;</a></h3>
 <p>In a command-line environment, <strong>ODF Validator</strong> is invoked by the following command:</p>
-<div class="codehilite"><pre><span></span> java -jar &quot;&lt;path&gt;/odfvalidator-VERSION-incubating-jar-with-dependencies.jar&quot;
+<div class="codehilite"><pre><span></span> java -jar &quot;&lt;path&gt;/odfvalidator-VERSION-jar-with-dependencies.jar&quot;
 </pre></div>
 
 
@@ -152,7 +152,7 @@ as well as a servlet.  An instance of the servlet is <a href="http://odf-validat
 <div class="codehilite"><pre><span></span>java
   -Djavax.xml.validation.SchemaFactory:http://relaxng.org/ns/structure/1.0=org.iso_relax.verifier.jaxp.validation.RELAXNGSchemaFactoryImpl
   -Dorg.iso_relax.verifier.VerifierFactoryLoader=com.sun.msv.verifier.jarv.FactoryLoaderImpl
-  -jar &quot;&lt;path&gt;/odfvalidator-&lt;VERSION&gt;-incubating-jar-with-dependencies.jar&quot;
+  -jar &quot;&lt;path&gt;/odfvalidator-&lt;VERSION&gt;-jar-with-dependencies.jar&quot;
 </pre></div>
 
 
